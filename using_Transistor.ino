@@ -1,5 +1,6 @@
+//トランジスタでDCモーターを動かす場合
+
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
@@ -7,7 +8,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   String str;
   str = Serial.readStringUntil('z');
   Serial.print(str);
