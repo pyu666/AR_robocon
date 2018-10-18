@@ -1,7 +1,8 @@
 # AR_robocon
-====
-OverView
-ARマーカーを読み込んで、そのとおりにロボットが動くプログラム
+
+
+## OverView
+ARマーカーを読み込んで、そのとおりにロボットが動きます
 
 ## Description
 ARマーカーを含む画像を撮影すると、その画像の中からARマーカーを探します。
@@ -30,3 +31,6 @@ python AR_Reader.py Reader
 python TakeAR.py
 を実行すると"Test.png"が呼ばれます。これはカメラがなくても実行可能です。
 
+## 注意点
+現状、使っているIDが殆どありません。
+各自、TakeAR.pyの18行目～及びArduinoファイルに書き込んでください。
