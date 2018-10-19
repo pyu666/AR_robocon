@@ -34,7 +34,7 @@ python AR_Reader.py Generator
 python Window.py
 
 メインファイルです。実行すると新規ウインドウが立ち上がります。
-
+https://github.com/pyu666/AR_robocon/blob/develop/イメージ.png
 ロボットを動かすボタンを押すと認識したARマーカーをシリアルポートに送信します。
 
 
