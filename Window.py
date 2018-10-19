@@ -67,8 +67,8 @@ class App:
 class MyVideoCapture:
     def __init__(self, video_source=1):
         self.vid = cv2.VideoCapture(video_source)  # openCVでカメラ起動
-        cap.set(3, 1280)
-        cap.set(4, 1024)
+        self.vid.set(3, 1280)
+        self.vid.set(4, 1024)
         if not self.vid.isOpened():
             raise ValueError("Unable to open video source", video_source)
         self.width = self.vid.get(cv2.CAP_PROP_FRAME_WIDTH)
