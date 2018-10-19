@@ -14,7 +14,7 @@ Arduinoは受け取ったコマンドを解釈してそのとおりに動きま�
 ## 必要なもの
 Python 3.x
 
-opencv-python
+opencv-python( 環境によっては opencv-contrib-pythonも必要)
 
 pyserial
 
