@@ -20,18 +20,30 @@ pyserial
 
 numpy
 
+PIL
+
 
 ## 動かし方
+最初に
+
 python AR_Reader.py Generator
 
-でARマーカーを作成
+でARマーカーを作成してください。
+
+
+python Window.py
+
+メインファイルです。実行すると新規ウインドウが立ち上がります。
+
+ロボットを動かすボタンを押すと認識したARマーカーをシリアルポートに送信します。
 
 
 python AR_Reader.py Reader
 
 でARマーカー読み込み
 キャプチャ画像がメインウインドウになっている状態で"A"を入力すると、
-その時点での画像が"out.png"に保存され、同時にTakeAR.pyが呼び出されArduinoが動き出します。
+その時点での画像が"out.png"に保存されます。同時にTakeAR.pyが呼び出されArduinoが動き出します。
+
 
 python TakeAR.py
 
@@ -39,4 +51,5 @@ python TakeAR.py
 
 ## 注意点
 現状、使っているIDが殆どありません。
+
 各自、TakeAR.pyの18行目～及びArduinoファイルに書き込んでください。
