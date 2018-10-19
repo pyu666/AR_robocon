@@ -35,7 +35,7 @@ python Window.py
 
 メインファイルです。実行すると新規ウインドウが立ち上がります。
 
-![動作イメージ](https://raw.github.com/wiki/pyu666/AR_robocon/blob/develop/イメージ.png)
+![動作イメージ](イメージ.png)
 
 ロボットを動かすボタンを押すと認識したARマーカーをシリアルポートに送信します。
 
