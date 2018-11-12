@@ -11,13 +11,13 @@ aruco = cv2.aruco  # arucoライブラリ
 dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
 
 
-def arGenerator():
+def ar_generator():
     for i in range(50):
         generator = aruco.drawMarker(dictionary, i, 100)
         cv2.imwrite(str(i) + '.png', generator)
 
 
-def arReader():
+def ar_reader():
     cap = cv2.VideoCapture(1)  # ビデオキャプチャの開始 (0なら1台目、1なら2台目)
 
     while True:
@@ -54,8 +54,8 @@ if __name__ == '__main__':
     args = sys.argv
     ar = args[1]
     if ar == "Generator":
-        arGenerator()
+        ar_generator()
     elif ar == "Reader":
-        arReader()
+        ar_reader()
     else:
         print("Please enter valid argument")
