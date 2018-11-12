@@ -5,7 +5,7 @@ import TakeAR
 import PIL.Image, PIL.ImageTk
 #  pip install pillow
 
-aruco = cv2.aruco  # arucoライブラリ
+aruco = cv2.aruco  # aruco ライブラリ
 dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
 
 
